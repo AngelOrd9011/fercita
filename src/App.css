@@ -59,9 +59,10 @@
   padding: 1.5rem;
 }
 
-.heart {
-  font-size: 2.5rem;
-  color: #f4a6bd;
+.sunflower {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: contain;
 }
 
 h1 {

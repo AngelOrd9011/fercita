@@ -41,7 +41,7 @@ const IMAGES = [
   {
     name: 'IMG-20260910-WA0050.jpg',
     ratio: 0.75,
-    text: 'Admiro y respeto la educación que tu mamá te ha dado, y que tú has sabido mantener y mejorar.',
+    text: 'Admiro y respeto la educación que tu mamá te dio, y que tú has sabido mantener y mejorar.',
   },
   {
     name: 'IMG-20260910-WA0048.jpg',
@@ -147,9 +147,7 @@ function FlipCard({ src, ratio, text, index }: GalleryImage & { index: number })
           />
         </div>
         <div className="card-back">
-          <span className="heart" aria-hidden="true">
-            ♥
-          </span>
+          <img className="sunflower" src="/girasol.webp" alt="" aria-hidden="true" />
           <p>{text}</p>
         </div>
       </div>
@@ -173,7 +171,7 @@ function App() {
 
   return (
     <>
-      <FallingLeaves fullScreen shapes={['ginkgo']} />
+      <FallingLeaves fullScreen shapes={['birch']} />
       <h1>“Todo lo que se hace por amor, se hace más allá del bien y del mal.” ― Nietzsche</h1>
       <main className="gallery">
         {columns.map((column, i) => (
